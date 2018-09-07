@@ -53,7 +53,7 @@ render(){
               {
                 this.props.books
                 .filter(book => book.shelf ===
-                'Read')
+                'read')
                 .map(book => (
                   <li key = {book.id}>
                     <Book/>
