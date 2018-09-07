@@ -37,7 +37,7 @@ class BooksApp extends React.Component {
               <ol className="books-grid"></ol>
             </div>
           </div>
-        ) : (
+        ) : ( //if false display the following (main page)
           <div className="list-books">
             <div className="list-books-title">
               <h1>MyReads</h1>
