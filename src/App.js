@@ -6,6 +6,10 @@ import MainPage from './MainPage';
 import './App.css'
 
 class BooksApp extends React.Component {
+state = {
+  books: []
+  }
+
   render() {
     return (
       <div className="app">
