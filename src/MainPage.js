@@ -3,6 +3,7 @@ import Book from './Book';
 
 class MainPage extends Component {
 render(){
+      console.log(this.props.books); //to check array
   return (
     <div className="list-books">
       <div className="list-books-title">

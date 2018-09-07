@@ -6,7 +6,7 @@ import * as BooksAPI from './BooksAPI'
 import './App.css'
 
 class BooksApp extends React.Component {
-state = {
+  state = {
   books: []
   }
 
@@ -20,7 +20,9 @@ state = {
     console.log(this.state.books); //to check array
     return (
       <div className="app">
-        <MainPage/>
+        <MainPage
+        books = {this.state.books}
+        />        
       </div>
     )
   }
