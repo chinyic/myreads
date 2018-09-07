@@ -20,7 +20,9 @@ render(){
                 'currentlyReading')
                 .map(book => (
                   <li key = {book.id}>
-                    <Book/>
+                    <Book
+                      book ={book}
+                    />
                   </li>
                 ))
               }
@@ -38,7 +40,9 @@ render(){
                   'wantToRead')
                   .map(book => (
                     <li key = {book.id}>
-                      <Book/>
+                      <Book
+                        book ={book}
+                      />
                     </li>
                   ))
                 }
@@ -56,7 +60,9 @@ render(){
                 'read')
                 .map(book => (
                   <li key = {book.id}>
-                    <Book/>
+                    <Book
+                      book ={book}
+                      />
                   </li>
                 ))
               }
