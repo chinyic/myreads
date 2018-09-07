@@ -22,6 +22,7 @@ render(){
                   <li key = {book.id}>
                     <Book
                       book ={book}
+                      moveShelf= {this.props.moveShelf}
                     />
                   </li>
                 ))
@@ -42,6 +43,7 @@ render(){
                     <li key = {book.id}>
                       <Book
                         book ={book}
+                        moveShelf= {this.props.moveShelf}
                       />
                     </li>
                   ))
@@ -62,6 +64,7 @@ render(){
                   <li key = {book.id}>
                     <Book
                       book ={book}
+                      moveShelf= {this.props.moveShelf}
                       />
                   </li>
                 ))

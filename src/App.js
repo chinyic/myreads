@@ -16,13 +16,17 @@ class BooksApp extends React.Component {
     })
   }
 
+  moveShelf = () => {//create method and pass into mainpage
+
+  }
+
   render() {
-    console.log(this.state.books); //to check array
     return (
       <div className="app">
         <MainPage
         books = {this.state.books}
-        />        
+        moveShelf={this.moveShelf}
+        />
       </div>
     )
   }
