@@ -17,6 +17,7 @@ state = {
   }
 
   render() {
+    console.log(this.state.books); //to check array
     return (
       <div className="app">
         <MainPage/>
