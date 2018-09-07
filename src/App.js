@@ -16,8 +16,8 @@ class BooksApp extends React.Component {
     })
   }
 
-  moveShelf = () => {//create method and pass into mainpage
-
+  moveShelf = (book, shelf) => {//create method and pass into mainpage
+    update(book, shelf);
   }
 
   render() {
