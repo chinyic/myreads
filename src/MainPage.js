@@ -166,4 +166,4 @@ render(){
 }
 }
 
-expore default MainPage;
+export default MainPage;

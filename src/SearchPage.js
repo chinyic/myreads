@@ -33,4 +33,4 @@ class SearchPage extends Component {
   }
 }
 
-expore default SearchPage;
+export default SearchPage;
