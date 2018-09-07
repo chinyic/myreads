@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Book from './Book'
+import Book from './Book';
 
 class MainPage extends Component {
 render(){
@@ -15,7 +15,7 @@ render(){
             <div className="bookshelf-books">
               <ol className="books-grid">
                 <li>
-
+                  <Book/>
                 </li>
               </ol>
             </div>
@@ -25,7 +25,7 @@ render(){
             <div className="bookshelf-books">
               <ol className="books-grid">
                 <li>
-
+                  <Book/>
                 </li>
               </ol>
             </div>
@@ -35,7 +35,7 @@ render(){
             <div className="bookshelf-books">
               <ol className="books-grid">
                 <li>
-
+                  <Book/>
                 </li>
               </ol>
             </div>
