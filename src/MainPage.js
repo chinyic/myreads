@@ -23,6 +23,7 @@ render(){
                     <Book
                       book ={book}
                       moveShelf= {this.props.moveShelf}
+                      currentShelf= "currentlyReading"
                     />
                   </li>
                 ))
@@ -44,6 +45,7 @@ render(){
                       <Book
                         book ={book}
                         moveShelf= {this.props.moveShelf}
+                        currentShelf= "wantToRead"
                       />
                     </li>
                   ))
@@ -65,6 +67,7 @@ render(){
                     <Book
                       book ={book}
                       moveShelf= {this.props.moveShelf}
+                      currentShelf= "read"
                       />
                   </li>
                 ))
