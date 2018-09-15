@@ -18,6 +18,10 @@ class BooksApp extends React.Component {
 
   moveShelf = (book, shelf) => {//create method and pass into mainpage
     BooksAPI.update(book, shelf);
+
+    BooksAPI.getAll().then((books) => {
+      this.setState({ books: books })
+    })
   }
 
   render() {
