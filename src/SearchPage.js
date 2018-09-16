@@ -13,20 +13,22 @@ class SearchPage extends Component {
     this.setState({
       query: query
     })
+    this.updateSearchedBooks(query)
   }
 
-  getSearchedBooks = (query) => {
-    BooksAPI.search(query).then((searchedBooks) => {
-      this.setState({searchedBooks: searchedBooks})
-    })
+  updateSearchedBooks = (query) => {
+    if (query) {
+      BooksAPI.search(query).then((searchedBooks) => {
+        this.setState({searchedBooks: searchedBooks})
+      })
+    } else {
+      this.setState({searchedBooks: [] });
+    }
+
   }
 
   render(){
-    if (this.state.query) {
 
-    } else {
-      this.setState({searchedBooks: this.searchedBooks})
-    }
     return(
       <div className="search-books">
         <div className="search-books-bar">
