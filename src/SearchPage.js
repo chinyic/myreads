@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-import Book from './Book';
 
+import Book from './Book';
 import * as BooksAPI from './BooksAPI';
 
 class SearchPage extends Component {
@@ -77,9 +77,9 @@ class SearchPage extends Component {
                 return (
                   <li key = {searchedBook.id} >
                   <Book
-                  book ={searchedBook}
-                  moveShelf={this.props.moveShelf}
-                  currentShelf={shelf}
+                    book ={searchedBook}
+                    moveShelf={this.props.moveShelf}
+                    currentShelf={shelf}
                   />
                   </li>
                 );
