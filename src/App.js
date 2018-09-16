@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import SearchPage from './SearchPage';
 import MainPage from './MainPage';
 
@@ -32,9 +33,10 @@ class BooksApp extends React.Component {
         moveShelf={this.moveShelf}
         />
 
-      /*  <SearchPage
+      {/*  <SearchPage
         moveShelf= {this.moveShelf}
         />*/
+      }
       </div>
     )
   }
