@@ -14,10 +14,13 @@ This opens the browser with a new window running.
 
 ## Resources
 React Router:
-https://reacttraining.com/react-router/
+
+<https://reacttraining.com/react-router/>
 
 Udacity Student Resources:
-https://www.diigo.com/outliner/fkkvtl/Udacity-MyReads%3A-My-Reads%3A-Book-Tracking-App-Project-(project-%236)?key=4sfz2eik4g
+
+<https://www.diigo.com/outliner/fkkvtl/Udacity-MyReads%3A-My-Reads%3A-Book-Tracking-App-Project-(project-%236)?key=4sfz2eik4g>
 
 Project Rubric:
-https://review.udacity.com/#!/rubrics/918/view
+
+<https://review.udacity.com/#!/rubrics/918/view>
