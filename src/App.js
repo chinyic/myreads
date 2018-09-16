@@ -1,9 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-
 import SearchPage from './SearchPage';
 import BookList from './BookList';
-
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 
@@ -15,14 +13,17 @@ class BooksApp extends React.Component {
   componentDidMount() {
     BooksAPI.getAll().then((books) => {
       this.setState({ books: books })
+      console.log("Books displayed are", this.state.books)
     })
   }
 
+//moving book to shelf
   moveShelf = (book, shelf) => {//create method and pass into BookList
     BooksAPI.update(book, shelf);
 
     BooksAPI.getAll().then((books) => {
       this.setState({ books: books })
+      console.log (`Book ${book.title} moved to ${shelf} shelf`);
     })
   }
 

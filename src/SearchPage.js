@@ -1,10 +1,16 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
-
 import Book from './Book';
 import * as BooksAPI from './BooksAPI';
+import PropTypes from 'prop-types';
 
 class SearchPage extends Component {
+
+  static propTypes = {
+    books: PropTypes.array.isRequired,
+    moveShelf: PropTypes.func.isRequired
+  }
+
   state = {
     query: '',
     searchedBooks: []
@@ -15,6 +21,7 @@ class SearchPage extends Component {
       query: query
     })
     this.updateSearchedBooks(query)
+    console.log ("query");
   }
 
   updateSearchedBooks = (query) => {
@@ -29,7 +36,7 @@ class SearchPage extends Component {
     } else {
       this.setState({searchedBooks: [] });
     }
-
+    console.log ("search typing");
   }
 
   render(){
@@ -38,8 +45,7 @@ class SearchPage extends Component {
       <div className="search-books">
         <div className="search-books-bar">
 
-          <Link
-            to="/"
+          <Link to="/"
             className="close-search"
           >Close</Link>
 

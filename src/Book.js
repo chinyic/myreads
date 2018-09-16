@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class Book extends Component {
+  static propTypes = {
+        books: PropTypes.object.isRequired,
+        moveShelf: PropTypes.func.isRequired
+    };
+
  render(){
+   const {books, moveShelf} = this.props;
    let displayThumbnail = this.props.book.imageLinks ? this.props.book.imageLinks.thumbnail :
    '';
    //if truthy display
