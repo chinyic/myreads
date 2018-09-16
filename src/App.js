@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import SearchPage from './SearchPage';
-import MainPage from './MainPage';
+import BookList from './BookList';
 
 import * as BooksAPI from './BooksAPI'
 import './App.css'
@@ -18,7 +18,7 @@ class BooksApp extends React.Component {
     })
   }
 
-  moveShelf = (book, shelf) => {//create method and pass into mainpage
+  moveShelf = (book, shelf) => {//create method and pass into BookList
     BooksAPI.update(book, shelf);
 
     BooksAPI.getAll().then((books) => {
@@ -31,7 +31,7 @@ class BooksApp extends React.Component {
       <div className="app">
 
         <Route exact path="/" render={() => (
-          <MainPage books = {this.state.books}
+          <BookList books = {this.state.books}
            moveShelf={this.moveShelf}
            />
         )} />
